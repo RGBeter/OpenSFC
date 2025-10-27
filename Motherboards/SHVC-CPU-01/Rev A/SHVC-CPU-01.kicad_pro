@@ -68,6 +68,14 @@
           "It's like this on the original board"
         ],
         [
+          "extra_footprint|124689536|151882782|5c741ea2-a322-4957-8c5a-3470db9f7ae1|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "extra_footprint|125010464|210532782|33762c49-d9d7-4450-9b84-8581a96ebb6a|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|106550000|220050000|39c61620-2745-426f-b42a-63c795936a1f|00000000-0000-0000-0000-000000000000",
           "At some point ill fix this but its not important, its cause i removed the silkscreen without duping the footprint"
         ],

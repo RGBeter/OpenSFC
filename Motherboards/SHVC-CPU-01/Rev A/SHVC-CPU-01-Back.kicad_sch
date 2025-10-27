@@ -6,8 +6,8 @@
 	(paper "User" 594.004 713.994)
 	(title_block
 		(title "SHVC-CPU-01")
-		(date "2025-05-18")
-		(rev "A")
+		(date "2025-10-27")
+		(rev "A (SP1)")
 		(company "License: CERN-OHL-S")
 		(comment 1 "This Document Is Not Endorsed By Nintendo")
 		(comment 2 "Documented by starlightk7 for Repair Usage")
@@ -1287,42 +1287,30 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:Q_NPN_EBC"
+		(symbol "OpenSFC:Q_NPN_BEC"
 			(pin_names
-				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+				(at 1.778 2.794 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Q_NPN_EBC"
-				(at 5.08 -1.27 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1331,7 +1319,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "NPN transistor, emitter/base/collector"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1340,7 +1328,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "BJT"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1349,10 +1337,23 @@
 					(hide yes)
 				)
 			)
-			(symbol "Q_NPN_EBC_0_1"
+			(symbol "Q_NPN_BEC_0_1"
+				(rectangle
+					(start -3.556 1.778)
+					(end 3.556 -1.778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
-						(xy -2.54 0) (xy 0.635 0)
+						(xy -2.54 -2.54) (xy -2.54 0) (xy -0.762 0) (xy -0.762 0.762) (xy -0.762 -0.762) (xy -0.762 0)
+						(xy 0.254 -0.508) (xy 0.254 0) (xy -0.254 -0.762) (xy 0.254 -0.508) (xy 0 -0.508) (xy 0.254 -0.254)
+						(xy 0 -0.508) (xy 0.254 -0.508) (xy 0.508 -0.762) (xy 0.508 -1.27) (xy 2.54 -1.27) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -1364,21 +1365,46 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905)
+						(xy -0.762 0.762) (xy -0.762 1.016) (xy -0.762 -1.016)
 					)
 					(stroke
-						(width 0.508)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
+				(polyline
+					(pts
+						(xy -0.762 0.254) (xy 0 0.762) (xy 0 2.54)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -0.762) (xy 0.508 -0.762) (xy 0.254 0) (xy 0.254 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 0.254 -0.508)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1386,47 +1412,29 @@
 					)
 				)
 			)
-			(symbol "Q_NPN_EBC_1_1"
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
+			(symbol "Q_NPN_BEC_1_1"
+				(pin passive line
+					(at -2.54 -3.81 90)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1442,8 +1450,8 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
+					(at 2.54 -3.81 90)
+					(length 1.27)
 					(name "C"
 						(effects
 							(font
@@ -1452,24 +1460,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1480,42 +1470,30 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:Q_PNP_BEC"
+		(symbol "OpenSFC:Q_PNP_EBC"
 			(pin_names
-				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+				(at 1.778 2.794 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Q_PNP_BEC"
-				(at 5.08 -1.27 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1524,7 +1502,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "PNP transistor, base/emitter/collector"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1533,7 +1511,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "BJT"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1542,58 +1520,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Q_PNP_BEC_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 0.635 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
+			(symbol "Q_PNP_EBC_0_1"
+				(rectangle
+					(start -3.556 1.778)
+					(end 3.556 -1.778)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1604,21 +1534,72 @@
 				)
 				(polyline
 					(pts
-						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)
+						(xy -2.54 -2.54) (xy -2.54 0) (xy -0.762 0) (xy -0.762 0.762) (xy -0.762 -0.762) (xy -0.762 0)
+						(xy 0.254 -0.508) (xy 0.254 -1.016) (xy 0.1748 -0.5934) (xy 0.254 -0.508) (xy 0.5834 -0.4677)
+						(xy 0.254 -1.016) (xy 0 -0.508) (xy 0.254 -0.508) (xy 0.508 -0.762) (xy 0.508 -1.27) (xy 2.54 -1.27)
+						(xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0.762) (xy -0.762 1.016) (xy -0.762 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0.254) (xy 0 0.762) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.508) (xy 0.254 -1.016) (xy 0.508 -0.508) (xy 0 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.3571 -0.8133) (xy 0.254 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
-			(symbol "Q_PNP_BEC_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
+			(symbol "Q_PNP_EBC_1_1"
+				(pin passive line
+					(at -2.54 -3.81 90)
+					(length 1.27)
 					(name "B"
 						(effects
 							(font
@@ -1626,7 +1607,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1634,10 +1615,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
+				(pin input line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1653,16 +1634,16 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
+					(at 2.54 -3.81 90)
+					(length 1.27)
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5057,12 +5038,6 @@
 		(uuid "012c9bfc-69d6-489c-9e5d-faafd71e61e4")
 	)
 	(junction
-		(at 96.52 217.17)
-		(diameter 0)
-		(color 180 180 180 1)
-		(uuid "02981d09-2f07-456c-82f0-d10ed7d16b54")
-	)
-	(junction
 		(at 304.8 424.18)
 		(diameter 0)
 		(color 255 0 0 1)
@@ -5115,6 +5090,12 @@
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "04605d1c-1fa7-4501-976b-c69704850d5a")
+	)
+	(junction
+		(at 300.99 394.97)
+		(diameter 0)
+		(color 0 0 100 1)
+		(uuid "067472ab-be80-45a3-a0cc-10a8c5fba2a0")
 	)
 	(junction
 		(at 259.08 394.97)
@@ -5423,6 +5404,12 @@
 		(uuid "210a60f2-6faf-40ed-b2c6-2f833d19fb3d")
 	)
 	(junction
+		(at 297.18 118.11)
+		(diameter 0)
+		(color 0 231 246 1)
+		(uuid "2138a1ad-eeea-4d2f-981d-0b7c146add94")
+	)
+	(junction
 		(at 478.79 534.67)
 		(diameter 0)
 		(color 255 0 0 1)
@@ -5561,6 +5548,12 @@
 		(uuid "2b685abf-2440-4cdc-adda-c0867f5b3f06")
 	)
 	(junction
+		(at 107.95 124.46)
+		(diameter 0)
+		(color 255 0 85 1)
+		(uuid "2bca65d5-b2ba-463b-a410-4f973d0a2827")
+	)
+	(junction
 		(at 529.59 303.53)
 		(diameter 0)
 		(color 0 0 0 1)
@@ -5571,12 +5564,6 @@
 		(diameter 0)
 		(color 182 165 0 1)
 		(uuid "2c02084e-40ee-41a0-a429-74dfa7719524")
-	)
-	(junction
-		(at 340.36 128.27)
-		(diameter 0)
-		(color 0 255 3 1)
-		(uuid "2c40c9cd-1be9-4b25-b6e5-aad5da9438d5")
 	)
 	(junction
 		(at 318.77 224.79)
@@ -6683,6 +6670,12 @@
 		(uuid "824208ce-04c5-4d5d-85d3-fc38facdc00f")
 	)
 	(junction
+		(at 322.58 410.21)
+		(diameter 0)
+		(color 100 0 0 1)
+		(uuid "82646bbd-b5f6-4054-9efb-cb04ca99aff5")
+	)
+	(junction
 		(at 219.71 54.61)
 		(diameter 0)
 		(color 0 0 0 1)
@@ -6705,12 +6698,6 @@
 		(diameter 0)
 		(color 255 0 85 1)
 		(uuid "8302288b-fefa-400c-bbc9-956aea022ae8")
-	)
-	(junction
-		(at 490.22 571.5)
-		(diameter 0)
-		(color 85 22 22 1)
-		(uuid "832bf655-38cf-407c-aabd-3481cff0757f")
 	)
 	(junction
 		(at 394.97 584.2)
@@ -6767,10 +6754,10 @@
 		(uuid "85884189-2a86-45e0-aad9-cc0e53be3d15")
 	)
 	(junction
-		(at 322.58 410.21)
+		(at 96.52 217.17)
 		(diameter 0)
-		(color 100 0 0 1)
-		(uuid "85fa1ebc-b5c2-4d6b-bb87-d67b5a722a61")
+		(color 180 180 180 1)
+		(uuid "859b6593-d992-4325-ac97-9f3f2af4cf0b")
 	)
 	(junction
 		(at 406.4 565.15)
@@ -6861,6 +6848,12 @@
 		(diameter 0)
 		(color 0 172 180 1)
 		(uuid "9276b587-0350-4ff9-9d58-f5d86aa3c660")
+	)
+	(junction
+		(at 490.22 574.04)
+		(diameter 0)
+		(color 85 22 22 1)
+		(uuid "93115a71-ed1e-4dfb-bfac-47c8192b89c1")
 	)
 	(junction
 		(at 509.27 303.53)
@@ -7107,6 +7100,12 @@
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "a6b22932-ad9d-4916-a2b8-9aa5e6839c8a")
+	)
+	(junction
+		(at 317.5 402.59)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "a6c657e6-7347-430a-83c2-b1f5ed116d44")
 	)
 	(junction
 		(at 176.53 290.83)
@@ -7433,12 +7432,6 @@
 		(uuid "c51bfb1b-7eb5-403d-8cf6-09a6c28301f5")
 	)
 	(junction
-		(at 317.5 402.59)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "c60867c4-7102-4424-8d24-9dcec89d6085")
-	)
-	(junction
 		(at 219.71 62.23)
 		(diameter 0)
 		(color 255 0 0 1)
@@ -7691,12 +7684,6 @@
 		(uuid "dc39342f-81fa-4ff4-b059-f6b0478e461a")
 	)
 	(junction
-		(at 298.45 394.97)
-		(diameter 0)
-		(color 0 0 100 1)
-		(uuid "dca4e075-117b-4ba5-99a8-e2d189b827dc")
-	)
-	(junction
 		(at 266.7 186.69)
 		(diameter 0)
 		(color 0 0 0 1)
@@ -7841,7 +7828,7 @@
 		(uuid "e8251bc5-0489-4722-8534-79eaa03062c5")
 	)
 	(junction
-		(at 482.6 579.12)
+		(at 485.14 581.66)
 		(diameter 0)
 		(color 85 22 22 1)
 		(uuid "e83c16c4-b758-44c8-8aad-fa1f00d28bd6")
@@ -7955,6 +7942,12 @@
 		(uuid "f137e881-6fd1-4646-b4e5-2a9b7fd9a2d5")
 	)
 	(junction
+		(at 337.82 128.27)
+		(diameter 0)
+		(color 0 255 3 1)
+		(uuid "f18ec2b4-5101-4604-a274-e371f4964769")
+	)
+	(junction
 		(at 488.95 599.44)
 		(diameter 0)
 		(color 85 22 22 1)
@@ -7995,12 +7988,6 @@
 		(diameter 0)
 		(color 182 165 0 1)
 		(uuid "f314ad79-71c9-4723-ac5a-86a2517d8087")
-	)
-	(junction
-		(at 107.95 124.46)
-		(diameter 0)
-		(color 255 0 85 1)
-		(uuid "f414e81f-fb81-4d0e-aa6a-6667f1e0d2a6")
 	)
 	(junction
 		(at 530.86 58.42)
@@ -8211,7 +8198,7 @@
 	)
 	(wire
 		(pts
-			(xy 486.41 593.09) (xy 486.41 588.01)
+			(xy 486.918 593.09) (xy 486.918 588.01)
 		)
 		(stroke
 			(width 0)
@@ -8547,6 +8534,17 @@
 			(color 127 0 80 1)
 		)
 		(uuid "0403fba2-c765-4414-b736-830136594f83")
+	)
+	(wire
+		(pts
+			(xy 295.91 217.17) (xy 309.88 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 100 0 0 1)
+		)
+		(uuid "044f66ac-92c2-4d8d-92a7-43256bb3221f")
 	)
 	(wire
 		(pts
@@ -9645,17 +9643,6 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 194.31) (xy 294.64 194.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 100 0 1)
-		)
-		(uuid "0d3211a0-13fc-4ca9-9ba8-2de7cdf40211")
-	)
-	(wire
-		(pts
 			(xy 407.67 599.44) (xy 407.67 588.01)
 		)
 		(stroke
@@ -9919,7 +9906,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 179.07) (xy 285.75 179.07)
+			(xy 256.54 179.07) (xy 286.258 179.07)
 		)
 		(stroke
 			(width 0)
@@ -10007,6 +9994,17 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 167.64) (xy 271.78 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 100 1)
+		)
+		(uuid "10694ee4-2f1f-4709-9043-d4b90b129ff8")
+	)
+	(wire
+		(pts
 			(xy 426.72 604.52) (xy 426.72 605.79)
 		)
 		(stroke
@@ -10015,6 +10013,17 @@
 			(color 0 172 180 1)
 		)
 		(uuid "108ff300-ab10-4735-bee2-9825ba07f5fa")
+	)
+	(wire
+		(pts
+			(xy 330.2 128.27) (xy 332.74 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 255 3 1)
+		)
+		(uuid "10a427bd-36ba-4252-9ae6-4be8099de105")
 	)
 	(wire
 		(pts
@@ -10814,17 +10823,6 @@
 	)
 	(wire
 		(pts
-			(xy 485.14 593.09) (xy 486.41 593.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "17b8114d-8783-47a7-a211-cc5faa73721f")
-	)
-	(wire
-		(pts
 			(xy 391.16 158.75) (xy 391.16 133.35)
 		)
 		(stroke
@@ -11320,17 +11318,6 @@
 			(color 255 0 85 1)
 		)
 		(uuid "1b924ae9-b837-4cf6-b9b7-46ac0f9148a8")
-	)
-	(wire
-		(pts
-			(xy 294.64 114.3) (xy 294.64 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 231 246 1)
-		)
-		(uuid "1bb9f3b2-1c62-49e1-8c6d-003654e5e792")
 	)
 	(wire
 		(pts
@@ -11948,7 +11935,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 125.73) (xy 332.74 120.65)
+			(xy 330.962 122.428) (xy 330.962 120.65)
 		)
 		(stroke
 			(width 0)
@@ -12809,6 +12796,17 @@
 	)
 	(wire
 		(pts
+			(xy 297.18 114.046) (xy 297.18 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 231 246 1)
+		)
+		(uuid "27646e66-b52b-4b87-a640-8eb84dbaaff0")
+	)
+	(wire
+		(pts
 			(xy 368.3 336.55) (xy 382.27 336.55)
 		)
 		(stroke
@@ -13178,17 +13176,6 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 377.19) (xy 320.04 407.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 100 0 1)
-		)
-		(uuid "29d7eee5-0e76-4d9b-baf8-d552601223e8")
-	)
-	(wire
-		(pts
 			(xy 416.56 363.22) (xy 458.47 363.22)
 		)
 		(stroke
@@ -13319,7 +13306,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 118.11) (xy 289.56 118.11)
+			(xy 287.02 118.11) (xy 292.1 118.11)
 		)
 		(stroke
 			(width 0)
@@ -14042,7 +14029,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 120.65) (xy 335.28 120.65)
+			(xy 330.962 120.65) (xy 335.28 120.65)
 		)
 		(stroke
 			(width 0)
@@ -14061,6 +14048,16 @@
 			(color 100 0 0 1)
 		)
 		(uuid "2fc97bbd-0998-48e1-9c31-41609dc8d093")
+	)
+	(wire
+		(pts
+			(xy 91.44 224.79) (xy 93.98 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fe03962-4b23-4419-9c15-e26ac357b892")
 	)
 	(wire
 		(pts
@@ -15034,17 +15031,6 @@
 	)
 	(wire
 		(pts
-			(xy 495.3 580.39) (xy 495.3 579.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "378c6a50-b750-4a1e-9c77-c9abd72f4b39")
-	)
-	(wire
-		(pts
 			(xy 58.42 236.22) (xy 58.42 229.87)
 		)
 		(stroke
@@ -15449,7 +15435,7 @@
 	)
 	(wire
 		(pts
-			(xy 476.25 582.93) (xy 467.36 582.93)
+			(xy 478.79 582.93) (xy 467.36 582.93)
 		)
 		(stroke
 			(width 0)
@@ -15962,6 +15948,17 @@
 	)
 	(wire
 		(pts
+			(xy 401.32 80.01) (xy 411.48 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 201 213 53 1)
+		)
+		(uuid "3f38e98e-262f-4d03-8a6a-f48d79000734")
+	)
+	(wire
+		(pts
 			(xy 255.27 571.5) (xy 255.27 575.31)
 		)
 		(stroke
@@ -16320,6 +16317,17 @@
 	)
 	(wire
 		(pts
+			(xy 308.61 394.97) (xy 306.07 394.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 100 1)
+		)
+		(uuid "4349db77-36da-4b3a-8582-f4cedf1276a8")
+	)
+	(wire
+		(pts
 			(xy 279.4 514.35) (xy 279.4 519.43)
 		)
 		(stroke
@@ -16591,7 +16599,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 130.81) (xy 350.52 130.81)
+			(xy 337.82 130.81) (xy 350.52 130.81)
 		)
 		(stroke
 			(width 0)
@@ -17495,7 +17503,7 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 400.05) (xy 298.45 394.97)
+			(xy 300.99 400.05) (xy 300.99 394.97)
 		)
 		(stroke
 			(width 0)
@@ -18196,7 +18204,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 410.21) (xy 295.91 410.21)
+			(xy 294.64 410.21) (xy 298.45 410.21)
 		)
 		(stroke
 			(width 0)
@@ -18314,6 +18322,17 @@
 			(color 0 0 0 1)
 		)
 		(uuid "540179c5-8009-45bf-9a5e-a10845501b31")
+	)
+	(wire
+		(pts
+			(xy 303.53 410.21) (xy 306.07 410.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 100 0 1)
+		)
+		(uuid "541198be-8d85-4611-9fbe-4f1bc639007e")
 	)
 	(wire
 		(pts
@@ -18502,7 +18521,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 130.81) (xy 326.39 127)
+			(xy 326.39 130.81) (xy 326.39 123.952)
 		)
 		(stroke
 			(width 0)
@@ -18892,18 +18911,7 @@
 	)
 	(wire
 		(pts
-			(xy 411.48 80.01) (xy 403.86 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 201 213 53 1)
-		)
-		(uuid "581f8ed1-5231-4d16-b465-d90dfde92f20")
-	)
-	(wire
-		(pts
-			(xy 304.8 400.05) (xy 298.45 400.05)
+			(xy 304.8 400.05) (xy 300.99 400.05)
 		)
 		(stroke
 			(width 0)
@@ -19085,7 +19093,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 132.08) (xy 120.65 132.08)
+			(xy 115.57 132.08) (xy 123.19 132.08)
 		)
 		(stroke
 			(width 0)
@@ -19629,6 +19637,17 @@
 			(color 0 172 180 1)
 		)
 		(uuid "5de52bcf-4f0a-4156-8bf0-2136b7c3afb1")
+	)
+	(wire
+		(pts
+			(xy 328.93 115.57) (xy 331.47 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 100 100 100 1)
+		)
+		(uuid "5df38a20-5fee-424f-b797-f2e90a781ba0")
 	)
 	(wire
 		(pts
@@ -20570,7 +20589,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 127) (xy 340.36 127)
+			(xy 326.39 123.952) (xy 337.82 123.952)
 		)
 		(stroke
 			(width 0)
@@ -21214,6 +21233,17 @@
 	)
 	(wire
 		(pts
+			(xy 337.82 128.27) (xy 337.82 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 255 3 1)
+		)
+		(uuid "6b68ffce-c2f0-4df7-ad51-3100ecd4a5d8")
+	)
+	(wire
+		(pts
 			(xy 308.61 248.92) (xy 307.34 248.92)
 		)
 		(stroke
@@ -21484,6 +21514,17 @@
 			(type default)
 		)
 		(uuid "6cee4a3a-d1a0-4292-9f11-f26c3d6f9e39")
+	)
+	(wire
+		(pts
+			(xy 284.48 194.31) (xy 294.64 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 100 0 1)
+		)
+		(uuid "6cef5d8b-6c9c-41c0-8c69-b4379a01730f")
 	)
 	(wire
 		(pts
@@ -23688,7 +23729,7 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 200.66) (xy 281.94 191.77)
+			(xy 281.686 200.66) (xy 281.686 190.5)
 		)
 		(stroke
 			(width 0)
@@ -23918,6 +23959,17 @@
 	)
 	(wire
 		(pts
+			(xy 427.99 168.91) (xy 430.53 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "81030505-1b2d-4766-b102-394ce405e3b5")
+	)
+	(wire
+		(pts
 			(xy 384.81 334.01) (xy 384.81 359.41)
 		)
 		(stroke
@@ -23926,6 +23978,17 @@
 			(color 182 165 0 1)
 		)
 		(uuid "8109bc26-95f2-40ca-86ea-d727bdf6bbc4")
+	)
+	(wire
+		(pts
+			(xy 320.04 377.19) (xy 320.04 405.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 100 0 1)
+		)
+		(uuid "810ef531-8996-4e65-bd3a-b0e36dca9263")
 	)
 	(polyline
 		(pts
@@ -24266,7 +24329,7 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 410.21) (xy 306.07 407.67)
+			(xy 306.07 405.13) (xy 306.07 410.21)
 		)
 		(stroke
 			(width 0)
@@ -24560,7 +24623,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 217.17) (xy 288.29 217.17)
+			(xy 287.02 217.17) (xy 290.83 217.17)
 		)
 		(stroke
 			(width 0)
@@ -24656,6 +24719,27 @@
 			(color 100 0 0 1)
 		)
 		(uuid "85f76426-17e6-4d69-a0d0-06d7ae064dec")
+	)
+	(wire
+		(pts
+			(xy 128.27 132.08) (xy 134.62 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 85 1)
+		)
+		(uuid "86376b5f-a9b4-4876-8535-f06239e9ca51")
+	)
+	(wire
+		(pts
+			(xy 420.37 168.91) (xy 422.91 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866ca24e-30c8-4368-871c-f19a52ffa267")
 	)
 	(wire
 		(pts
@@ -24823,7 +24907,7 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 191.77) (xy 285.75 191.77)
+			(xy 281.686 190.5) (xy 286.258 190.5)
 		)
 		(stroke
 			(width 0)
@@ -25312,7 +25396,7 @@
 	)
 	(wire
 		(pts
-			(xy 393.7 80.01) (xy 392.43 80.01)
+			(xy 392.43 80.01) (xy 396.24 80.01)
 		)
 		(stroke
 			(width 0)
@@ -25432,6 +25516,17 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 224.79) (xy 80.01 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 186 229 1)
+		)
+		(uuid "8bfb7089-0b6f-4d37-ac58-8dea3a01ee9d")
+	)
+	(wire
+		(pts
 			(xy 271.78 158.75) (xy 279.4 158.75)
 		)
 		(stroke
@@ -25542,7 +25637,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 224.79) (xy 69.85 224.79)
+			(xy 68.58 224.79) (xy 72.39 224.79)
 		)
 		(stroke
 			(width 0)
@@ -25696,7 +25791,7 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 125.73) (xy 332.74 125.73)
+			(xy 328.676 122.428) (xy 330.962 122.428)
 		)
 		(stroke
 			(width 0)
@@ -26004,7 +26099,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 128.27) (xy 340.36 130.81)
+			(xy 337.82 123.952) (xy 337.82 128.27)
 		)
 		(stroke
 			(width 0)
@@ -26851,7 +26946,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 227.33) (xy 151.13 227.33)
+			(xy 147.32 227.33) (xy 153.67 227.33)
 		)
 		(stroke
 			(width 0)
@@ -27035,7 +27130,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 194.31) (xy 275.59 194.31)
+			(xy 275.59 194.31) (xy 279.4 194.31)
 		)
 		(stroke
 			(width 0)
@@ -27956,6 +28051,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 132.08) (xy 105.41 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f77f052-ef28-4b60-86c7-d5cdd2ac7cc1")
+	)
+	(wire
+		(pts
 			(xy 463.55 360.68) (xy 477.52 360.68)
 		)
 		(stroke
@@ -28007,6 +28112,17 @@
 			(color 255 87 179 1)
 		)
 		(uuid "9fa188cf-6565-447b-bc81-2569625ad7da")
+	)
+	(wire
+		(pts
+			(xy 474.98 593.09) (xy 477.52 593.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 85 22 22 1)
+		)
+		(uuid "9fca7358-b0e7-4dbd-a5f3-48deec353c49")
 	)
 	(wire
 		(pts
@@ -28104,17 +28220,6 @@
 			(color 255 87 179 1)
 		)
 		(uuid "a065ddc1-f0db-489f-8aa4-c23c46a49993")
-	)
-	(wire
-		(pts
-			(xy 266.7 167.64) (xy 271.78 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 100 1)
-		)
-		(uuid "a0afaa42-2936-4a7a-94bc-fde57ce929d3")
 	)
 	(wire
 		(pts
@@ -28830,7 +28935,7 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 394.97) (xy 294.64 394.97)
+			(xy 300.99 394.97) (xy 294.64 394.97)
 		)
 		(stroke
 			(width 0)
@@ -28925,6 +29030,17 @@
 			(color 255 120 120 1)
 		)
 		(uuid "a72e74c6-e424-4ece-8a3e-823453b26872")
+	)
+	(wire
+		(pts
+			(xy 482.6 593.09) (xy 486.918 593.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "a746d9ac-7906-4761-ac81-cecf0aa029db")
 	)
 	(wire
 		(pts
@@ -30205,17 +30321,6 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 127) (xy 340.36 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 255 3 1)
-		)
-		(uuid "b31d43af-8548-468f-bc6b-413fab20940d")
-	)
-	(wire
-		(pts
 			(xy 420.37 574.04) (xy 420.37 575.31)
 		)
 		(stroke
@@ -30311,6 +30416,17 @@
 			(color 255 87 179 1)
 		)
 		(uuid "b374db9f-8204-4560-ba76-56bc7888c5c8")
+	)
+	(wire
+		(pts
+			(xy 99.06 224.79) (xy 106.68 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 180 180 180 1)
+		)
+		(uuid "b3b99a88-ffe9-40ff-858c-1d16a468083d")
 	)
 	(wire
 		(pts
@@ -30674,6 +30790,17 @@
 	)
 	(wire
 		(pts
+			(xy 297.18 118.11) (xy 299.72 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 231 246 1)
+		)
+		(uuid "b65eeb65-b6ce-49ec-8361-11f98ed59865")
+	)
+	(wire
+		(pts
 			(xy 392.43 476.25) (xy 402.59 476.25)
 		)
 		(stroke
@@ -31003,7 +31130,7 @@
 	)
 	(wire
 		(pts
-			(xy 486.41 588.01) (xy 483.87 588.01)
+			(xy 486.918 588.01) (xy 485.14 588.01)
 		)
 		(stroke
 			(width 0)
@@ -32663,6 +32790,17 @@
 	)
 	(wire
 		(pts
+			(xy 321.31 115.57) (xy 323.85 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 100 100 100 1)
+		)
+		(uuid "c729bde3-df94-4882-82cd-b1657c0b5564")
+	)
+	(wire
+		(pts
 			(xy 311.15 49.53) (xy 356.87 49.53)
 		)
 		(stroke
@@ -32792,17 +32930,6 @@
 			(color 255 0 85 1)
 		)
 		(uuid "c7fc3991-dac2-45aa-8de3-5779376f79a8")
-	)
-	(wire
-		(pts
-			(xy 106.68 224.79) (xy 101.6 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 180 180 180 1)
-		)
-		(uuid "c7fda06a-93df-4c1c-ba07-c57e0a9e64a5")
 	)
 	(wire
 		(pts
@@ -33173,7 +33300,7 @@
 	)
 	(wire
 		(pts
-			(xy 482.6 579.12) (xy 476.25 579.12)
+			(xy 485.14 581.66) (xy 478.79 581.66)
 		)
 		(stroke
 			(width 0)
@@ -33575,7 +33702,7 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 407.67) (xy 320.04 407.67)
+			(xy 306.07 405.13) (xy 320.04 405.13)
 		)
 		(stroke
 			(width 0)
@@ -33594,17 +33721,6 @@
 			(color 0 100 0 1)
 		)
 		(uuid "cf5f7816-6e5d-4a53-baa8-1a852684c514")
-	)
-	(wire
-		(pts
-			(xy 130.81 132.08) (xy 134.62 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 85 1)
-		)
-		(uuid "cf71b1cb-6ace-472c-977f-aa14e9d5a27e")
 	)
 	(wire
 		(pts
@@ -33663,7 +33779,7 @@
 	)
 	(wire
 		(pts
-			(xy 290.83 114.3) (xy 294.64 114.3)
+			(xy 290.576 114.046) (xy 297.18 114.046)
 		)
 		(stroke
 			(width 0)
@@ -34042,6 +34158,17 @@
 			(color 0 172 180 1)
 		)
 		(uuid "d2e6ea5a-1580-4194-b7d2-1ba55a478967")
+	)
+	(wire
+		(pts
+			(xy 158.75 227.33) (xy 161.29 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "d2f3cf3b-2b8e-413c-99a2-3859e5787b26")
 	)
 	(wire
 		(pts
@@ -35028,17 +35155,6 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 118.11) (xy 299.72 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 231 246 1)
-		)
-		(uuid "dbd94ccc-f6dd-4129-858d-c9e73e2b833f")
-	)
-	(wire
-		(pts
 			(xy 373.38 201.93) (xy 379.73 201.93)
 		)
 		(stroke
@@ -35764,7 +35880,7 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 200.66) (xy 276.86 200.66)
+			(xy 281.686 200.66) (xy 276.86 200.66)
 		)
 		(stroke
 			(width 0)
@@ -37114,6 +37230,28 @@
 	)
 	(wire
 		(pts
+			(xy 320.04 410.21) (xy 322.58 410.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 100 0 0 1)
+		)
+		(uuid "ec29aad5-8ec1-44f2-8c20-deca4341d581")
+	)
+	(wire
+		(pts
+			(xy 256.54 167.64) (xy 259.08 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 100 1)
+		)
+		(uuid "ec2cc375-ab55-4882-a78d-ec83244b3b83")
+	)
+	(wire
+		(pts
 			(xy 283.21 535.94) (xy 283.21 527.05)
 		)
 		(stroke
@@ -37133,6 +37271,17 @@
 			(color 255 0 0 1)
 		)
 		(uuid "ec599318-9397-42cc-832e-8544ba2c22eb")
+	)
+	(wire
+		(pts
+			(xy 110.49 132.08) (xy 113.03 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 85 1)
+		)
+		(uuid "ec64286b-c3eb-41c4-a440-65cd3b9489f7")
 	)
 	(wire
 		(pts
@@ -38772,6 +38921,17 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 410.21) (xy 314.96 410.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 100 0 0 1)
+		)
+		(uuid "fb48b783-b4c5-49ad-9c5b-8a842f6cbf0e")
+	)
+	(wire
+		(pts
 			(xy 163.83 236.22) (xy 163.83 219.71)
 		)
 		(stroke
@@ -38946,7 +39106,7 @@
 	)
 	(wire
 		(pts
-			(xy 476.25 579.12) (xy 476.25 582.93)
+			(xy 478.79 581.66) (xy 478.79 582.93)
 		)
 		(stroke
 			(width 0)
@@ -39164,7 +39324,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 191.77) (xy 285.75 179.07)
+			(xy 286.258 190.5) (xy 286.258 179.07)
 		)
 		(stroke
 			(width 0)
@@ -39261,17 +39421,6 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 217.17) (xy 309.88 217.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 100 0 0 1)
-		)
-		(uuid "ff2d2d92-3ef2-4d0b-b802-7e863a27f77e")
-	)
-	(wire
-		(pts
 			(xy 308.61 52.07) (xy 311.15 52.07)
 		)
 		(stroke
@@ -39316,7 +39465,7 @@
 	)
 	(wire
 		(pts
-			(xy 482.6 579.12) (xy 485.14 579.12)
+			(xy 485.14 581.66) (xy 487.68 581.66)
 		)
 		(stroke
 			(width 0)
@@ -45552,7 +45701,7 @@
 	)
 	(global_label "C59+"
 		(shape input)
-		(at 290.83 114.3 180)
+		(at 290.576 114.046 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -45562,7 +45711,7 @@
 		)
 		(uuid "9b3761ea-da7f-4fd1-8022-ace7566d0a3f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 282.5834 114.3 0)
+			(at 282.3294 114.046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51570,8 +51719,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_PNP_BEC")
-		(at 281.94 191.77 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 281.94 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -51579,7 +51728,7 @@
 		(dnp no)
 		(uuid "0a6d021c-4f8e-4877-8e18-53e80da9772a")
 		(property "Reference" "Q6"
-			(at 278.384 196.088 90)
+			(at 285.242 196.088 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51587,15 +51736,15 @@
 			)
 		)
 		(property "Value" "A1037"
-			(at 287.274 196.342 90)
+			(at 285.496 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 284.48 196.85 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 281.94 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51604,7 +51753,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 281.94 191.77 0)
+			(at 281.94 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51613,7 +51762,7 @@
 			)
 		)
 		(property "Description" "PNP transistor, base/emitter/collector"
-			(at 281.94 191.77 0)
+			(at 281.94 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51844,8 +51993,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 96.52 222.25 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 96.52 220.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -51853,7 +52002,7 @@
 		(dnp no)
 		(uuid "0c79b5e7-b187-4bf4-b4be-2fa27f6d5dec")
 		(property "Reference" "Q15"
-			(at 93.472 227.33 90)
+			(at 93.98 226.568 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51861,15 +52010,15 @@
 			)
 		)
 		(property "Value" "C2412"
-			(at 101.346 227.33 90)
+			(at 100.076 226.568 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 99.06 227.33 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 96.52 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51878,7 +52027,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 222.25 0)
+			(at 96.52 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51887,7 +52036,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 96.52 222.25 0)
+			(at 96.52 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53076,8 +53225,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_PNP_BEC")
-		(at 293.37 214.63 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 293.37 213.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -53085,7 +53234,7 @@
 		(dnp no)
 		(uuid "11994a38-fdc3-4159-a3e5-8998cb654311")
 		(property "Reference" "Q4"
-			(at 289.814 218.948 90)
+			(at 292.862 218.948 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53093,15 +53242,15 @@
 			)
 		)
 		(property "Value" "A1037"
-			(at 298.704 219.202 90)
+			(at 292.862 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 295.91 219.71 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 293.37 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53110,7 +53259,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 293.37 214.63 0)
+			(at 293.37 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53119,7 +53268,7 @@
 			)
 		)
 		(property "Description" "PNP transistor, base/emitter/collector"
-			(at 293.37 214.63 0)
+			(at 293.37 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53215,8 +53364,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 490.22 576.58 270)
+		(lib_id "OpenSFC:Q_NPN_BEC")
+		(at 490.22 577.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -53224,7 +53373,7 @@
 		(dnp no)
 		(uuid "129b5966-6ba1-4b8c-bd48-84ccb2ee9717")
 		(property "Reference" "Q2"
-			(at 486.664 580.898 90)
+			(at 484.632 577.596 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53232,7 +53381,7 @@
 			)
 		)
 		(property "Value" "C4699"
-			(at 496.316 575.31 90)
+			(at 496.062 574.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53240,7 +53389,7 @@
 			)
 		)
 		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 492.76 581.66 0)
+			(at 490.22 577.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53249,7 +53398,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 490.22 576.58 0)
+			(at 490.22 577.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53258,7 +53407,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 490.22 576.58 0)
+			(at 490.22 577.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56875,8 +57024,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_PNP_BEC")
-		(at 261.62 165.1 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 261.62 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -56884,7 +57033,7 @@
 		(dnp no)
 		(uuid "2312287f-2f31-4b92-badf-d642a7d115ff")
 		(property "Reference" "Q8"
-			(at 258.064 169.418 90)
+			(at 261.366 168.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56892,15 +57041,15 @@
 			)
 		)
 		(property "Value" "A1037"
-			(at 266.954 169.672 90)
+			(at 261.62 170.434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 264.16 170.18 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 261.62 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56909,7 +57058,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 261.62 165.1 0)
+			(at 261.62 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56918,7 +57067,7 @@
 			)
 		)
 		(property "Description" "PNP transistor, base/emitter/collector"
-			(at 261.62 165.1 0)
+			(at 261.62 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58366,8 +58515,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 156.21 224.79 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 156.21 223.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -58375,7 +58524,7 @@
 		(dnp no)
 		(uuid "2a890193-0400-4182-898f-272117319634")
 		(property "Reference" "Q13"
-			(at 151.892 230.886 90)
+			(at 150.876 229.362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58383,15 +58532,15 @@
 			)
 		)
 		(property "Value" "C2412"
-			(at 157.226 230.886 90)
+			(at 156.718 229.362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 158.75 229.87 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 156.21 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58400,7 +58549,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 224.79 0)
+			(at 156.21 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58409,7 +58558,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 156.21 224.79 0)
+			(at 156.21 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61272,7 +61421,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 482.6 579.12 0)
+		(at 485.14 581.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -61281,7 +61430,7 @@
 		(fields_autoplaced yes)
 		(uuid "3944b744-9142-46a2-94f2-bd564c9e5b22")
 		(property "Reference" "TP215"
-			(at 483.87 577.8499 0)
+			(at 486.41 580.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61291,7 +61440,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 483.87 580.3899 0)
+			(at 486.41 582.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61301,7 +61450,7 @@
 			)
 		)
 		(property "Footprint" "OpenSFC:TestPad"
-			(at 487.68 579.12 0)
+			(at 490.22 581.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61310,7 +61459,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 487.68 579.12 0)
+			(at 490.22 581.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61319,7 +61468,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 482.6 579.12 0)
+			(at 485.14 581.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -64628,8 +64777,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_PNP_BEC")
-		(at 303.53 392.43 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 303.53 391.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -64637,7 +64786,7 @@
 		(dnp no)
 		(uuid "4efc0a32-431d-4062-8f5e-18517a9d8cc7")
 		(property "Reference" "Q7"
-			(at 299.974 396.748 90)
+			(at 303.022 395.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -64645,15 +64794,15 @@
 			)
 		)
 		(property "Value" "A1037"
-			(at 308.864 397.002 90)
+			(at 304.8 397.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 306.07 397.51 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 303.53 391.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -64662,7 +64811,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 303.53 392.43 0)
+			(at 303.53 391.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -64671,7 +64820,7 @@
 			)
 		)
 		(property "Description" "PNP transistor, base/emitter/collector"
-			(at 303.53 392.43 0)
+			(at 303.53 391.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65306,7 +65455,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 495.3 580.39 0)
+		(at 492.76 581.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -65314,7 +65463,7 @@
 		(dnp no)
 		(uuid "52449fc2-8b2d-41dd-9b92-ba9248bba66e")
 		(property "Reference" "#PWR0378"
-			(at 495.3 586.74 0)
+			(at 492.76 588.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65323,7 +65472,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 495.3 584.454 0)
+			(at 496.316 583.184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65331,7 +65480,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 495.3 580.39 0)
+			(at 492.76 581.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65340,7 +65489,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 495.3 580.39 0)
+			(at 492.76 581.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65349,7 +65498,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 495.3 580.39 0)
+			(at 492.76 581.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -67602,8 +67751,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 335.28 125.73 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 335.28 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -67611,7 +67760,7 @@
 		(dnp no)
 		(uuid "5d9933d9-b472-4116-ae0d-df23841d7b4e")
 		(property "Reference" "Q12"
-			(at 332.74 132.08 90)
+			(at 341.63 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -67619,15 +67768,15 @@
 			)
 		)
 		(property "Value" "C2412"
-			(at 338.836 132.334 90)
+			(at 341.884 120.904 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 337.82 130.81 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 335.28 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -67636,7 +67785,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 335.28 125.73 0)
+			(at 335.28 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -67645,7 +67794,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 335.28 125.73 0)
+			(at 335.28 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -72781,9 +72930,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 425.45 166.37 90)
-		(mirror x)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 425.45 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -72791,7 +72939,7 @@
 		(dnp no)
 		(uuid "7aad493c-61d4-4166-a92d-4d66fdfee569")
 		(property "Reference" "Q18"
-			(at 421.64 163.576 90)
+			(at 424.942 170.434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -72799,15 +72947,15 @@
 			)
 		)
 		(property "Value" "C2412"
-			(at 425.45 171.958 90)
+			(at 424.942 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 422.91 171.45 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 425.45 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -72816,7 +72964,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 425.45 166.37 0)
+			(at 425.45 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -72825,7 +72973,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 425.45 166.37 0)
+			(at 425.45 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73323,8 +73471,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_PNP_BEC")
-		(at 300.99 407.67 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 300.99 406.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -73332,7 +73480,7 @@
 		(dnp no)
 		(uuid "80f7c895-40bb-42f9-a4ab-d9f2513861d0")
 		(property "Reference" "Q5"
-			(at 297.434 411.988 90)
+			(at 300.228 411.734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73340,15 +73488,15 @@
 			)
 		)
 		(property "Value" "A1037"
-			(at 305.562 404.876 90)
+			(at 300.228 413.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 303.53 412.75 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 300.99 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73357,7 +73505,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 300.99 407.67 0)
+			(at 300.99 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73366,7 +73514,7 @@
 			)
 		)
 		(property "Description" "PNP transistor, base/emitter/collector"
-			(at 300.99 407.67 0)
+			(at 300.99 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -78061,8 +78209,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 480.06 590.55 270)
+		(lib_id "OpenSFC:Q_NPN_BEC")
+		(at 480.06 589.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -78070,7 +78218,7 @@
 		(dnp no)
 		(uuid "976534a1-703b-496b-829d-2ef1bad01992")
 		(property "Reference" "Q1"
-			(at 477.52 595.63 90)
+			(at 482.346 585.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -78078,7 +78226,7 @@
 			)
 		)
 		(property "Value" "C4699"
-			(at 484.124 595.63 90)
+			(at 483.87 583.946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -78086,7 +78234,7 @@
 			)
 		)
 		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 482.6 595.63 0)
+			(at 480.06 589.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -78095,7 +78243,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 480.06 590.55 0)
+			(at 480.06 589.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -78104,7 +78252,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 480.06 590.55 0)
+			(at 480.06 589.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -79696,8 +79844,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 107.95 129.54 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 107.95 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -79705,7 +79853,7 @@
 		(dnp no)
 		(uuid "a385342d-a9e5-4494-a0a6-6cb26aa3e549")
 		(property "Reference" "Q14"
-			(at 110.49 126.492 90)
+			(at 107.696 133.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -79713,15 +79861,15 @@
 			)
 		)
 		(property "Value" "C2412"
-			(at 109.728 135.128 90)
+			(at 107.696 135.636 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 110.49 134.62 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 107.95 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -79730,7 +79878,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 129.54 0)
+			(at 107.95 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -79739,7 +79887,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 107.95 129.54 0)
+			(at 107.95 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -80173,7 +80321,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 330.2 125.73 0)
+		(at 328.676 122.428 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -80181,7 +80329,7 @@
 		(dnp no)
 		(uuid "a68a4109-15e0-4034-bd7d-3c469c3e784e")
 		(property "Reference" "#PWR0373"
-			(at 330.2 129.54 0)
+			(at 328.676 126.238 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -80190,7 +80338,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 330.2 121.92 0)
+			(at 325.628 120.904 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -80198,7 +80346,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 330.2 125.73 0)
+			(at 328.676 122.428 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -80207,7 +80355,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 330.2 125.73 0)
+			(at 328.676 122.428 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -80216,7 +80364,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 330.2 125.73 0)
+			(at 328.676 122.428 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -82525,7 +82673,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 483.87 588.01 0)
+		(at 485.14 588.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -82533,7 +82681,7 @@
 		(dnp no)
 		(uuid "b2f9cb81-cf77-4f86-a0d4-0423094de668")
 		(property "Reference" "#PWR0248"
-			(at 483.87 594.36 0)
+			(at 485.14 594.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -82542,7 +82690,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 484.378 586.486 0)
+			(at 484.886 592.074 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -82550,7 +82698,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 483.87 588.01 0)
+			(at 485.14 588.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -82559,7 +82707,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 483.87 588.01 0)
+			(at 485.14 588.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -82568,7 +82716,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 483.87 588.01 0)
+			(at 485.14 588.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -85650,8 +85798,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 294.64 115.57 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 294.64 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -85659,7 +85807,7 @@
 		(dnp no)
 		(uuid "bef5a94a-8c37-46ed-8b9a-13d45e5b7a03")
 		(property "Reference" "Q11"
-			(at 294.894 120.904 90)
+			(at 294.386 118.872 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -85667,15 +85815,15 @@
 			)
 		)
 		(property "Value" "C2412"
-			(at 294.64 122.936 90)
+			(at 294.386 120.904 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 297.18 120.65 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 294.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -85684,7 +85832,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 294.64 115.57 0)
+			(at 294.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -85693,7 +85841,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 294.64 115.57 0)
+			(at 294.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -87606,8 +87754,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_PNP_BEC")
-		(at 317.5 407.67 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 317.5 406.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -87615,7 +87763,7 @@
 		(dnp no)
 		(uuid "ca519c40-9ba9-4c9b-80e5-49516445d444")
 		(property "Reference" "Q3"
-			(at 313.944 411.988 90)
+			(at 316.738 411.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -87623,15 +87771,15 @@
 			)
 		)
 		(property "Value" "A1037"
-			(at 319.024 413.258 90)
+			(at 316.992 413.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 320.04 412.75 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 317.5 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -87640,7 +87788,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 317.5 407.67 0)
+			(at 317.5 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -87649,7 +87797,7 @@
 			)
 		)
 		(property "Description" "PNP transistor, base/emitter/collector"
-			(at 317.5 407.67 0)
+			(at 317.5 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90797,8 +90945,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 74.93 222.25 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 74.93 220.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -90806,7 +90954,7 @@
 		(dnp no)
 		(uuid "dc7e45f7-bde3-4075-bc89-5750ba52ad1d")
 		(property "Reference" "Q17"
-			(at 70.866 226.314 90)
+			(at 71.374 226.822 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90814,15 +90962,15 @@
 			)
 		)
 		(property "Value" "C2412"
-			(at 80.518 226.06 90)
+			(at 77.724 226.822 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 77.47 227.33 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 74.93 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90831,7 +90979,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 222.25 0)
+			(at 74.93 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90840,7 +90988,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 74.93 222.25 0)
+			(at 74.93 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90936,8 +91084,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 125.73 129.54 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 125.73 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -90945,7 +91093,7 @@
 		(dnp no)
 		(uuid "de10d781-82d2-41fc-acc2-2ea4a34debc6")
 		(property "Reference" "Q16"
-			(at 122.682 134.62 90)
+			(at 121.92 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90953,15 +91101,15 @@
 			)
 		)
 		(property "Value" "C2412"
-			(at 130.556 134.62 90)
+			(at 127.762 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 128.27 134.62 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 125.73 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90970,7 +91118,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 125.73 129.54 0)
+			(at 125.73 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90979,7 +91127,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 125.73 129.54 0)
+			(at 125.73 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -93785,8 +93933,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 398.78 77.47 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 398.78 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -93794,7 +93942,7 @@
 		(dnp no)
 		(uuid "f12599ad-ba79-4dda-8e81-8c00360f5a44")
 		(property "Reference" "Q10"
-			(at 395.224 81.788 90)
+			(at 398.78 81.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -93802,15 +93950,15 @@
 			)
 		)
 		(property "Value" "C2412"
-			(at 404.114 82.042 90)
+			(at 398.526 83.566 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 401.32 82.55 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 398.78 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -93819,7 +93967,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 398.78 77.47 0)
+			(at 398.78 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -93828,7 +93976,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 398.78 77.47 0)
+			(at 398.78 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -95884,8 +96032,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_EBC")
-		(at 326.39 113.03 270)
+		(lib_id "OpenSFC:Q_PNP_EBC")
+		(at 326.39 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -95893,7 +96041,7 @@
 		(dnp no)
 		(uuid "fbb7bbea-c042-4721-994d-f6a3491b558f")
 		(property "Reference" "Q9"
-			(at 322.834 117.348 90)
+			(at 326.136 116.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -95901,15 +96049,15 @@
 			)
 		)
 		(property "Value" "C2412"
-			(at 331.724 117.602 90)
+			(at 326.136 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
-			(at 328.93 118.11 0)
+		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+			(at 326.39 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -95918,7 +96066,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 326.39 113.03 0)
+			(at 326.39 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -95927,7 +96075,7 @@
 			)
 		)
 		(property "Description" "NPN transistor, emitter/base/collector"
-			(at 326.39 113.03 0)
+			(at 326.39 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
