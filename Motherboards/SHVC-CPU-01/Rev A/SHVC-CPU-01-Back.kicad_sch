@@ -6,8 +6,8 @@
 	(paper "User" 594.004 713.994)
 	(title_block
 		(title "SHVC-CPU-01")
-		(date "2025-10-27")
-		(rev "A (SP1)")
+		(date "2025-10-30")
+		(rev "A (SP2)")
 		(company "License: CERN-OHL-S")
 		(comment 1 "This Document Is Not Endorsed By Nintendo")
 		(comment 2 "Documented by starlightk7 for Repair Usage")
@@ -1342,7 +1342,7 @@
 					(start -3.556 1.778)
 					(end 3.556 -1.778)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1413,7 +1413,7 @@
 				)
 			)
 			(symbol "Q_NPN_BEC_1_1"
-				(pin passive line
+				(pin input line
 					(at -2.54 -3.81 90)
 					(length 1.27)
 					(name "B"
@@ -1431,8 +1431,26 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 0 3.81 270)
+					(length 1.27)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -3.81 90)
 					(length 1.27)
 					(name "E"
 						(effects
@@ -1449,8 +1467,155 @@
 						)
 					)
 				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "OpenSFC:Q_NPN_BEC_Alt"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 1.778 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_NPN_BEC_Alt_0_1"
+				(rectangle
+					(start -3.556 1.778)
+					(end 3.556 -1.778)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -2.54 0) (xy -0.762 0) (xy -0.762 0.762) (xy -0.762 -0.762) (xy -0.762 0)
+						(xy 0.254 -0.508) (xy 0.254 0) (xy -0.254 -0.762) (xy 0.254 -0.508) (xy 0 -0.508) (xy 0.254 -0.254)
+						(xy 0 -0.508) (xy 0.254 -0.508) (xy 0.508 -0.762) (xy 0.508 -1.27) (xy 2.54 -1.27) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0.762) (xy -0.762 1.016) (xy -0.762 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0.254) (xy 0 0.762) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -0.762) (xy 0.508 -0.762) (xy 0.254 0) (xy 0.254 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 0.254 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_NPN_BEC_Alt_1_1"
+				(pin input line
+					(at -2.54 -3.81 90)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
-					(at 2.54 -3.81 90)
+					(at 0 3.81 270)
 					(length 1.27)
 					(name "C"
 						(effects
@@ -1460,6 +1625,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -3.81 90)
+					(length 1.27)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -51993,7 +52176,7 @@
 		)
 	)
 	(symbol
-		(lib_id "OpenSFC:Q_PNP_EBC")
+		(lib_id "OpenSFC:Q_NPN_BEC_Alt")
 		(at 96.52 220.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -52017,7 +52200,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC_Alt"
 			(at 96.52 220.98 0)
 			(effects
 				(font
@@ -53388,7 +53571,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC"
 			(at 490.22 577.85 0)
 			(effects
 				(font
@@ -58515,7 +58698,7 @@
 		)
 	)
 	(symbol
-		(lib_id "OpenSFC:Q_PNP_EBC")
+		(lib_id "OpenSFC:Q_NPN_BEC_Alt")
 		(at 156.21 223.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -58539,7 +58722,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC_Alt"
 			(at 156.21 223.52 0)
 			(effects
 				(font
@@ -67751,7 +67934,7 @@
 		)
 	)
 	(symbol
-		(lib_id "OpenSFC:Q_PNP_EBC")
+		(lib_id "OpenSFC:Q_NPN_BEC_Alt")
 		(at 335.28 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -67775,7 +67958,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC_Alt"
 			(at 335.28 124.46 0)
 			(effects
 				(font
@@ -72930,7 +73113,7 @@
 		)
 	)
 	(symbol
-		(lib_id "OpenSFC:Q_PNP_EBC")
+		(lib_id "OpenSFC:Q_NPN_BEC_Alt")
 		(at 425.45 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -72954,7 +73137,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC_Alt"
 			(at 425.45 165.1 0)
 			(effects
 				(font
@@ -78233,7 +78416,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC"
 			(at 480.06 589.28 0)
 			(effects
 				(font
@@ -79844,7 +80027,7 @@
 		)
 	)
 	(symbol
-		(lib_id "OpenSFC:Q_PNP_EBC")
+		(lib_id "OpenSFC:Q_NPN_BEC_Alt")
 		(at 107.95 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -79868,7 +80051,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC_Alt"
 			(at 107.95 128.27 0)
 			(effects
 				(font
@@ -85798,7 +85981,7 @@
 		)
 	)
 	(symbol
-		(lib_id "OpenSFC:Q_PNP_EBC")
+		(lib_id "OpenSFC:Q_NPN_BEC_Alt")
 		(at 294.64 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -85822,7 +86005,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC_Alt"
 			(at 294.64 114.3 0)
 			(effects
 				(font
@@ -90945,7 +91128,7 @@
 		)
 	)
 	(symbol
-		(lib_id "OpenSFC:Q_PNP_EBC")
+		(lib_id "OpenSFC:Q_NPN_BEC_Alt")
 		(at 74.93 220.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -90969,7 +91152,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC_Alt"
 			(at 74.93 220.98 0)
 			(effects
 				(font
@@ -91084,7 +91267,7 @@
 		)
 	)
 	(symbol
-		(lib_id "OpenSFC:Q_PNP_EBC")
+		(lib_id "OpenSFC:Q_NPN_BEC_Alt")
 		(at 125.73 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -91108,7 +91291,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC_Alt"
 			(at 125.73 128.27 0)
 			(effects
 				(font
@@ -93957,7 +94140,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC_Alt"
 			(at 398.78 76.2 0)
 			(effects
 				(font
@@ -96032,7 +96215,7 @@
 		)
 	)
 	(symbol
-		(lib_id "OpenSFC:Q_PNP_EBC")
+		(lib_id "OpenSFC:Q_NPN_BEC_Alt")
 		(at 326.39 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -96056,7 +96239,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenSFC:Q_SOT_PNP_EBC"
+		(property "Footprint" "OpenSFC:Q_SOT_NPM_BEC_Alt"
 			(at 326.39 111.76 0)
 			(effects
 				(font
