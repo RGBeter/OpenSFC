@@ -51,7 +51,7 @@ All boards in this project are 28-35 years old at the time of writing. All relev
 
 | Part Number | Description | Region | Status| Japan | United States | United Kingdom |
 |-------------|-------------|----------------------|-------|-------|---------------|----------------|
-| SHVC-CPU-01 (1990) | The original 2-chip motherboard. This board is the best routed motherboard of all two chip models. Early 1/1/1 Units are extremely reliable. Late 2/1/3 units have a high failure rate. | NTSC-U / NTSC-J | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop) | [1upRestorations](https://1uprestorations.com/collections/console-mod-parts/products/opensfc-bundle) | [RetroUpgrades](https://www.retroupgrades.co.uk/product/opensfc-shvc-bundle) |
+| SHVC-CPU-01 (1990) | The original 2-chip motherboard. This board is the best routed motherboard of all two chip models. Early 1/1/1 Units are extremely reliable. Late 2/1/3 units have a high failure rate. | NTSC-U / NTSC-J | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop), [eBay (Direct)](https://www.ebay.com/itm/136746135648) | [1upRestorations](https://1uprestorations.com/collections/console-mod-parts/products/opensfc-bundle) | [RetroUpgrades](https://www.retroupgrades.co.uk/product/opensfc-shvc-bundle) |
 | SNS-CPU-GPM-01 (1991) | Contains the often failing CPU 2A. | NTSC-U / NTSC-J | In Progress | N/A | N/A | N/A |
 
 ### Sound Module
@@ -59,14 +59,14 @@ All boards in this project are 28-35 years old at the time of writing. All relev
 | Part Number | Description | Region | Status| Japan | United States | United Kingdom |
 |-------------|-------------|----------------------|-------|-------|---------------|----------------|
 | TCMK-77XR SHVC-SOUND | The early type, missing resistors on the 2904. Repro for historical purposes only. | NTSC-U / NTSC-J | Planned | N/A | N/A | N/A |
-| TCMK-77XR SHVC-SOUND F | This is the late model sound module which fixed missing resistors on the 2904. | NTSC-U / NTSC-J | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop) | [1upRestorations](https://1uprestorations.com/collections/console-mod-parts/products/opensfc-bundle) | [RetroUpgrades](https://www.retroupgrades.co.uk/product/opensfc-shvc-bundle) |
+| TCMK-77XR SHVC-SOUND F | This is the late model sound module which fixed missing resistors on the 2904. | NTSC-U / NTSC-J | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop), [eBay (Direct)](https://www.ebay.com/itm/136746135648) | [1upRestorations](https://1uprestorations.com/collections/console-mod-parts/products/opensfc-bundle) | [RetroUpgrades](https://www.retroupgrades.co.uk/product/opensfc-shvc-bundle) |
 
 ### Front Panel Board
 
 | Part Number | Description | Region | Status| Japan | United States | United Kingdom |
 |-------------|-------------|----------------------|-------|-------|---------------|----------------|
-| TCMK-81X CCK-N10 | Found in SHVC and GPM Super Famicoms | NTSC-J | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop)| [1upRestorations](https://1uprestorations.com/collections/console-mod-parts/products/opensfc-bundle) | [RetroUpgrades](https://www.retroupgrades.co.uk/product/opensfc-shvc-bundle) |
-| TCMK-81X CCK-N20 | Found in SHVC and GPM North American SNESes | NTSC-U | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop) | [1upRestorations](https://1uprestorations.com/collections/console-mod-parts/products/opensfc-bundle) | [RetroUpgrades](https://www.retroupgrades.co.uk/product/opensfc-shvc-bundle) |
+| TCMK-81X CCK-N10 | Found in SHVC and GPM Super Famicoms | NTSC-J | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop), [eBay (Direct)](https://www.ebay.com/itm/136746135648)| [1upRestorations](https://1uprestorations.com/collections/console-mod-parts/products/opensfc-bundle) | [RetroUpgrades](https://www.retroupgrades.co.uk/product/opensfc-shvc-bundle) |
+| TCMK-81X CCK-N20 | Found in SHVC and GPM North American SNESes | NTSC-U | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop), [eBay(Direct)](https://www.ebay.com/itm/136746135648) | [1upRestorations](https://1uprestorations.com/collections/console-mod-parts/products/opensfc-bundle) | [RetroUpgrades](https://www.retroupgrades.co.uk/product/opensfc-shvc-bundle) |
 
 ### Controllers
 
