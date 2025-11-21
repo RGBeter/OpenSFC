@@ -48,11 +48,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.1
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [],
       "drc_exclusions": [
+        [
+          "duplicate_footprints|113200000|67100000|3cf4cb57-b70a-46e0-a3e4-90784a5ae46a|250adef5-def5-42ec-950c-008160d326af",
+          ""
+        ],
+        [
+          "extra_footprint|113200000|67100000|3cf4cb57-b70a-46e0-a3e4-90784a5ae46a|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "extra_footprint|99789536|67967218|250adef5-def5-42ec-950c-008160d326af|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
         [
           "lib_footprint_mismatch|106627018|56913045|4f30ee38-b4a6-4ac7-aab9-58235cdfce80|00000000-0000-0000-0000-000000000000",
           ""
@@ -66,7 +78,15 @@
           ""
         ],
         [
+          "lib_footprint_mismatch|156270000|57375000|de4791b4-c811-4b0f-82e7-682d0c3f2d49|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|75700000|61700000|55811baf-7164-4109-979d-2beedf70a230|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "shorting_items|76353927|63027490|1c390945-9b1c-44fb-986c-7747d375382e|5abea61a-93a1-4fb0-ae4e-50f2e7499f6a",
           ""
         ],
         [
