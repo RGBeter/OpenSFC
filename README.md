@@ -41,6 +41,14 @@ Feel free to come chat with us on Discord: [![demo](https://img.shields.io/disco
 
 All boards in this project are 28-35 years old at the time of writing. All relevant patents worldwide have long expired. This project is not affiliated with or endorsed by the big N.
 
+## Commissions
+
+I do not have time to build commissions on a regular basis, however, there are members of the retro community whom offer this service.
+
+| US/Canada | EU |
+|-----------|----|
+| [1upRestorations (United States)'](https://1uprestorations.com/collections/pre-modded-consoles/products/opensfc-custom-build) | [Modding Marius](https://moddingmarius.com/super-nintendo/)
+
 ## Disclaimer
 
 **WARNING:** Doing a full build is an advanced project. Please carefully read the documentation and required skills and experience before purchasing or ordering a board. Purchasing boards and parts does not guarantee that you can be successful in doing a build. Significant experience in soldering and desoldering, along with a variety of tools are necessary. Your first build will likely not work on its first boot. Patience, analysis, and debugging will likely be necessary to bring the unit online. Order at your own risk. The author provides no guarantee of your success, and also cannot guarantee that any given vendor can fabricate these boards correctly. If you are ordering boards, please consult with your target vendor before ordering if you wish to order a board.
@@ -72,9 +80,10 @@ All boards in this project are 28-35 years old at the time of writing. All relev
 
 | Part Number | Description | Region | Status| Japan | United States | United Kingdom |
 |-------------|-------------|----------------------|-------|-------|---------------|----------------|
-| 56V313A (1990.6) | Found in early two chip consoles. 2x shift register model | NTSC-J / NTSC-U | In Progress | N/A | N/A | N/A |
-| 56V313D (1995)   | Found in controllers for late models. 1x Obsolete Shift Register | Universal | Prototype Under Testing | N/A | N/A | N/A |
-| 56V313A          | L/R Trigger Board | Universal | Prototype Under Testing | N/A | N/A | N/A |
+| 56V313A (1990.6) | Found in 1/1/1 SHVC controllers. 2x shift register model | NTSC-J / NTSC-U | Preparing for Release | N/A | N/A | N/A |
+| 56V313B (1991)   | Found in 2/1/3 SHVC controllers. 1x Obsolete Shift Register, no PAL support | NTSC-J / NTSC-U | Planned | N/A | N/A | N/A |
+| 56V313D (1992+)  | Found in controllers for GPM and beyond. 1x Obsolete Shift Register | Universal | Preparing for Release | N/A | N/A | N/A |
+| 56V313A          | L/R Trigger Board | Universal | Preparing for Release | N/A | N/A | N/A |
 
 ### Cartridges
 
