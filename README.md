@@ -85,11 +85,5 @@ I do not have time to build commissions on a regular basis, however, there are m
 | 56V313D (1992+)  | Found in controllers for GPM and beyond. 1x Obsolete Shift Register | Universal | Preparing for Release | N/A | N/A | N/A |
 | 56V313A          | L/R Trigger Board | Universal | Preparing for Release | N/A | N/A | N/A |
 
-### Cartridges
 
-There are none currently in progress, but they are planned for future.
-
-### Accessories
-
-There are none currently in progress, but they planned for future.
 
