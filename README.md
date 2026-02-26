@@ -1,5 +1,9 @@
 # OpenSFC
 
+## Modifications
+
+This fork modifies OpenSFC to redraw the SHVC-SOUND schematic and add the audio balance fix. SHVC-SOUND has been made into a 4 layer pcb for added noise performance.
+
 ## Introduction
 
 This repository contains OSHW Reproduction Parts related to the Super Famicom (SFC) / Super NES (SNES) game console under the umbrella name OpenSFC. While these parts are primarily developed from the Japanese Super Famicom models, you can build a North American SNES as well as long as you use the appropriate front and rear panels. See the documentation for details.
